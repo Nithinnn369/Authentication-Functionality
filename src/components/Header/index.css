@@ -1,0 +1,119 @@
+/* Write your CSS code here */
+.nav-header {
+  display: flex;
+  justify-content: space-around;
+}
+@media screen and (max-width: 767px) {
+  .nav-header {
+    flex-direction: column;
+  }
+  .nav-content {
+    flex-direction: column;
+    width: 100%;
+    padding-right: 15px;
+  }
+}
+.nav-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 85%;
+  max-width: 1110px;
+  padding: 25px 15px;
+}
+.nav-bar-mobile-logo-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.website-logo {
+  height: 30px;
+  width: 120px;
+}
+@media screen and (min-width: 768px) {
+  .website-logo {
+    height: 60px;
+    width: 160px;
+  }
+}
+.nav-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex: 1;
+  list-style-type: none;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.nav-menu-mobile {
+  width: 100%;
+}
+.nav-menu-list-mobile {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 70px;
+  background-color: #e6f6ff;
+  flex: 1;
+  list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+}
+.nav-menu-item {
+  font-family: 'Roboto';
+  margin: 10px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #475569;
+}
+.nav-menu-item-mobile {
+  margin: 0px;
+  cursor: pointer;
+}
+.logout-desktop-btn {
+  font-family: 'Roboto';
+  font-weight: 600;
+  font-size: 10px;
+  color: #ffffff;
+  padding: 8px 16px;
+  background-color: #0967d2;
+  border: none;
+  border-radius: 4px;
+  margin-left: 14px;
+  cursor: pointer;
+  outline: none;
+}
+.nav-mobile-btn {
+  border: none;
+  padding: 0px;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+}
+.nav-bar-img {
+  height: 30px;
+  width: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .nav-bar-mobile-logo-container {
+    display: none;
+  }
+  .nav-menu-mobile {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .nav-bar-large-contaier {
+    display: none;
+  }
+  .nav-menu {
+    display: none;
+  }
+  .logout-desktop-btn {
+    display: none;
+  }
+}
